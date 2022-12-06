@@ -26,6 +26,7 @@ class EntityIdGenerator
 
                 throw new ArgumentException($"Length should not be 0 and bigger than {DEFAULT_ENTITY_ID_SIZE}");
             }
+            
             string id = generateRandomString();
             bool exists = checkIfExists(id);
 
